@@ -1,0 +1,85 @@
+@import "common";
+@import "mixin";
+
+.p14-bg {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.p14-img-1 {
+  width: toRem(806);
+  top: toRem(229);
+  right: toRem(289);
+  z-index: 2;
+}
+
+.p14-img-1-2 {
+  width: toRem(812);
+}
+
+.p14-div-1 {
+  width: 100%;
+  top: toRem(550);
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+}
+
+.p14-img-2 {
+  width: toRem(303);
+}
+
+.p14-img-3 {
+  width: toRem(704);
+  display: block;
+  margin: toRem(26) auto 0;
+}
+
+.p14-img-4 {
+  width: toRem(643);
+  margin: toRem(26) auto 0;
+  display: block;
+}
+
+.p14-div-2, .num-div {
+  display: inline-block;
+}
+
+.p14-div-2 {
+  margin-top: toRem(40);
+  .num {
+    font-size: toRem(83);
+    color: #4a0101;
+    opacity: 0.28;
+  }
+}
+
+.p14-img-5, .p14-img-6 {
+  margin-top: -(toRem(34));
+}
+
+.p14-img-5 {
+  width: toRem(278);
+}
+
+.p14-img-6 {
+  width: toRem(366);
+}
+
+.p14-div-3 {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+
+
+

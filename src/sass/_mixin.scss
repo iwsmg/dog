@@ -1,0 +1,119 @@
+$pageW:1334;
+@mixin txt-hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin clamp($num:2) {
+    //use:@include clamp(3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $num;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin fadeIn($duration,$delay){
+    -webkit-animation: fadeIn $duration ease $delay backwards;
+    -moz-animation: fadeIn $duration ease $delay backwards;
+    -o-animation: fadeIn $duration ease $delay backwards;
+    animation: fadeIn $duration ease $delay backwards;
+}
+
+@mixin fadeInLeft($duration,$delay){
+    -webkit-animation: fadeInLeft $duration ease $delay backwards;
+    -moz-animation: fadeInLeft $duration ease $delay backwards;
+    -o-animation: fadeInLeft $duration ease $delay backwards;
+    animation: fadeInLeft $duration ease $delay backwards;
+}
+
+@mixin fadeOut1($duration,$delay){
+    -webkit-animation: fadeOut1 $duration ease $delay backwards;
+    -moz-animation: fadeOut1 $duration ease $delay backwards;
+    -o-animation: fadeOut1 $duration ease $delay backwards;
+    animation: fadeOut1 $duration ease $delay backwards;
+}
+
+@mixin eyes{
+    background: url("../images/p3-img-9.jpg") 0 0 no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    height: toRem(725);
+    margin-top: toRem(140);
+    -webkit-animation-name: eyes; /* 动画名称 */
+    -moz-animation-name: eyes;
+    -o-animation-name: eyes;
+    animation-name: eyes;
+    -webkit-animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
+    -moz-animation-timing-function: step-start;
+    -o-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    -webkit-animation-duration: 3000ms; /* 动画运行的时间 */
+    -moz-animation-duration: 3000ms;
+    -o-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+}
+
+@mixin fire{
+    background: url("../images/p4-img-1.jpg") 0 0 no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    margin: 0.33rem;
+    -webkit-animation-name: fire; /* 动画名称 */
+    -moz-animation-name: fire;
+    -o-animation-name: fire;
+    animation-name: fire;
+    -webkit-animation-iteration-count: infinite; /* 动画无限播放 */
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
+    -moz-animation-timing-function: step-start;
+    -o-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    -webkit-animation-duration: 450ms; /* 动画运行的时间 */
+    -moz-animation-duration: 450ms;
+    -o-animation-duration: 450ms;
+    animation-duration: 450ms;
+}
+
+@mixin dogEyes{
+    -webkit-animation-name: dogEyes; /* 动画名称 */
+    -moz-animation-name: dogEyes;
+    -o-animation-name: dogEyes;
+    animation-name: dogEyes;
+    -webkit-animation-iteration-count: infinite; /* 动画无限播放 */
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
+    -moz-animation-timing-function: step-start;
+    -o-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    -webkit-animation-duration: 2000ms; /* 动画运行的时间 */
+    -moz-animation-duration: 2000ms;
+    -o-animation-duration: 2000ms;
+    animation-duration: 2000ms;
+}
+
+@function toRem($pxSize){
+    @return $pxSize/($pageW/(750*12/$pageW))*1rem;
+}
