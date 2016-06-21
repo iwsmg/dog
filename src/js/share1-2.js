@@ -192,7 +192,7 @@ var getNumber = function () {
         }
     });
 };
-getNumber();
+// getNumber();
 
 var topicShare = function () {
     $.ajax({
