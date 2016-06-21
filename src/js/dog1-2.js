@@ -311,7 +311,7 @@ $(function () {
             if (audioFlag) {
                 audioFlag = false;
                 playAudio(audioObj, 0);
-                pauseAudio(audioObj);
+                // pauseAudio(audioObj);
             }
         });
 
